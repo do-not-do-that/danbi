@@ -15,7 +15,6 @@ class RoutineTest(APITestCase):
 
         self.response=self.client.post('/accounts/', json.dumps(sign_up_info), content_type='application/json')
 
-
     def test_routine_post_data(self):
         data = {
             "title": "테스트 타이틀",
